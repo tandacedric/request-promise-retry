@@ -1,6 +1,6 @@
 {
-  "name": "promise-request-retry-callback",
-  "version": "1.0.2",
+  "name": "@httc/promise-request-retry-callback",
+  "version": "1.0.0",
   "description": "Simple wrapper on request-promise for retry mechanism with callback",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "thenable",
     "bluebird"
   ],
-  "author": "Cedric Tanda",
+  "author": "cedrictanda",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tandacedric/request-promise-retry-callback/issues"
@@ -60,5 +60,8 @@
   "engines": {
     "node": ">=6.11.1"
   },
-  "homepage": "https://github.com/tandacedric/request-promise-retry-callback#readme"
+  "homepage": "https://github.com/tandacedric/request-promise-retry-callback#readme",
+  "directories": {
+    "test": "test"
+  }
 }

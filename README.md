@@ -14,7 +14,7 @@ Simple wrapper on top of [request-promise](https://github.com/request/request-pr
 
 #### GET Request sample with retry
 ```
-var rp = require('promise-request-retry-callback');
+var rp = require('@httc/promise-request-retry-callback');
 var options = {
     uri: 'https://api.github.com/user/repos',
     qs: {
@@ -51,7 +51,7 @@ rp(options)
 For rest of samples, please refer [`request-promise` documentation](https://github.com/request/request-promise).
 
 ### Installation
-`npm install promise-request-retry-callback`
+`npm install @httc/promise-request-retry-callback`
 
 ### Test
 `npm test`
