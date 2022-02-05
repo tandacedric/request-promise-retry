@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/void666/request-promise-retry.git"
+    "url": "git+https://github.com/tandacedric/request-promise-retry.git"
   },
   "keywords": [
     "retry",
@@ -29,10 +29,10 @@
     "thenable",
     "bluebird"
   ],
-  "author": "Sushim Mukul Dutta",
+  "author": "Cedric Tanda",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/void666/request-promise-retry/issues"
+    "url": "https://github.com/tandacedric/request-promise-retry/issues"
   },
   "dependencies": {
     "async": "^2.6.0",
@@ -60,5 +60,5 @@
   "engines": {
     "node": ">=6.11.1"
   },
-  "homepage": "https://github.com/void666/request-promise-retry#readme"
+  "homepage": "https://github.com/tandacedric/request-promise-retry#readme"
 }

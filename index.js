@@ -20,8 +20,15 @@ class rpRetry {
         if (options.verbose_logging) {
             logger.info(`calling ${options.uri} with retry ${tries}, initial delay=${delay}, factor=${factor}`);
         }
+        const callback = options.callback || null;
+        delete options.callback;
+
 
         const fetchDataWithRetry = (tryCount, delay) => {
+            if (callback && tryCount < tries) {
+                console.log(`call back: tries ${tries} tryCount ${tryCount}`);
+                callback(tries - tryCount);
+            }
             return requestPromise(options)
                 .then(result => {
                     if (options.verbose_logging) {
@@ -37,7 +44,8 @@ class rpRetry {
                     }
                     logger.info(`Encountered error ${err.message} for ${options.method} request to ${options.uri}, retry count ${tryCount}`);
                     tryCount -= 1;
-                    if (tryCount) {
+                  
+                    if (tryCount >=0) {
                         return new Promise((resolve, reject) => {
                             setTimeout(() => {
                                 logger.debug(`waiting for ${delay} ms before next retry for ${options.uri}. Next wait ${delay * factor}`);
