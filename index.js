@@ -26,7 +26,7 @@ class rpRetry {
 
         const fetchDataWithRetry = (tryCount, delay) => {
             if (callback && tryCount < tries) {
-                console.log(`call back: tries ${tries} tryCount ${tryCount}`);
+                logger.info(`call back: tries ${tries} tryCount ${tryCount}`);
                 callback(tries - tryCount);
             }
             return requestPromise(options)
