@@ -1,6 +1,6 @@
 {
   "name": "@httc/promise-request-retry-callback",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple wrapper on request-promise for retry mechanism with callback",
   "main": "index.js",
   "scripts": {
