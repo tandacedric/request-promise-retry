@@ -1,7 +1,7 @@
 {
-  "name": "promise-request-retry",
+  "name": "promise-request-retry-callback",
   "version": "1.0.2",
-  "description": "Simple wrapper on request-promise for retry mechanism",
+  "description": "Simple wrapper on request-promise for retry mechanism with callback",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/gulp/bin/gulp.js test",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tandacedric/request-promise-retry.git"
+    "url": "git+https://github.com/tandacedric/request-promise-retry-callback.git"
   },
   "keywords": [
     "retry",
@@ -32,7 +32,7 @@
   "author": "Cedric Tanda",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tandacedric/request-promise-retry/issues"
+    "url": "https://github.com/tandacedric/request-promise-retry-callback/issues"
   },
   "dependencies": {
     "async": "^2.6.0",
@@ -60,5 +60,5 @@
   "engines": {
     "node": ">=6.11.1"
   },
-  "homepage": "https://github.com/tandacedric/request-promise-retry#readme"
+  "homepage": "https://github.com/tandacedric/request-promise-retry-callback#readme"
 }

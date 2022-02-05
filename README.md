@@ -1,20 +1,20 @@
-## request-promise-retry 
-#### [npm : promise-request-retry](https://www.npmjs.com/package/promise-request-retry)
+## request-promise-retry-callback 
+#### [npm : promise-request-retry-callback](https://www.npmjs.com/package/promise-request-retry-callback)
 [![npm version](https://badge.fury.io/js/promise-request-retry.svg)](https://badge.fury.io/js/promise-request-retry)
 [![coverage status](https://coveralls.io/repos/github/void666/request-promise-retry/badge.svg)](https://coveralls.io/github/void666/request-promise-retry)
 [![build status](https://travis-ci.org/void666/request-promise-retry.svg?branch=master)](https://travis-ci.org/void666/request-promise-retry)
 [![npm downloads](https://img.shields.io/npm/dt/promise-request-retry.svg)](https://img.shields.io/npm/dt/promise-request-retry)
-
 Simple wrapper on top of [request-promise](https://github.com/request/request-promise) to replicate retry mechanism, i.e, it will try to reprocess the request till a valid response is obtained, or the number of retrys is exhausted. Supports all options from request-promise.
 
 ### Usage
--  additional parameter `retry` needed in `request-promise` options.
+-  additionals parameter `retry` and `callback` function needed in `request-promise` options.
 - `retry` supports boolean (defaults to `1` retry) and positive integer.
+- `callback` is a function who take one parameter: retryValue.
 -  in order to ignore retry or use generic`request-promise`,just don't specify the `retry` parameter.
 
 #### GET Request sample with retry
 ```
-var rp = require('promise-request-retry');
+var rp = require('promise-request-retry-callback');
 var options = {
     uri: 'https://api.github.com/user/repos',
     qs: {
@@ -51,7 +51,7 @@ rp(options)
 For rest of samples, please refer [`request-promise` documentation](https://github.com/request/request-promise).
 
 ### Installation
-`npm install promise-request-retry`
+`npm install promise-request-retry-callback`
 
 ### Test
 `npm test`
